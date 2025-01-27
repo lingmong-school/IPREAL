@@ -7,6 +7,10 @@ TagManager:
   - Mallet
   - Anchor
   - mochi
+  - Paper
+  - Plastic
+  - Metal
+  - Scoop
   layers:
   - Default
   - TransparentFX

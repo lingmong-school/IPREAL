@@ -4,8 +4,8 @@ using UnityEngine;
 public class MochiButton : MonoBehaviour
 {
     [SerializeField] private string requiredTag = "mochi"; // The tag to check for
-    [SerializeField] private Animator buttonAnimator; // Reference to the Animator for the button
-    private bool isInteractable = false; // Determines if the button can be interacted with
+    [SerializeField] private Animator targetAnimator;      // Reference to the Animator of the target GameObject
+    private bool isInteractable = false;                  // Determines if the button can be interacted with
 
     private void OnTriggerEnter(Collider other)
     {
@@ -33,7 +33,7 @@ public class MochiButton : MonoBehaviour
         if (isInteractable)
         {
             Debug.Log("Mochi button has been poked!");
-            PlayButtonAnimation();
+            SetCookTrigger();
         }
         else
         {
@@ -41,16 +41,16 @@ public class MochiButton : MonoBehaviour
         }
     }
 
-    private void PlayButtonAnimation()
+    private void SetCookTrigger()
     {
-        if (buttonAnimator != null)
+        if (targetAnimator != null)
         {
-            buttonAnimator.SetTrigger("Poke");
-            Debug.Log("Button animation triggered.");
+            targetAnimator.SetTrigger("Cook");
+            Debug.Log("Animation trigger 'Cook' has been set.");
         }
         else
         {
-            Debug.LogWarning("Button Animator is not assigned.");
+            Debug.LogWarning("Target Animator is not assigned.");
         }
     }
 }
