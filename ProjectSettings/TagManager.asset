@@ -11,6 +11,7 @@ TagManager:
   - Plastic
   - Metal
   - Scoop
+  - Lump
   layers:
   - Default
   - TransparentFX

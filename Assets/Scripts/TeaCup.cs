@@ -5,6 +5,7 @@ public class TeaCup : MonoBehaviour
 {
     // Reference to the GameObject to enable
     public GameObject objectToEnable;
+    public GameObject objectToDisable;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -15,6 +16,7 @@ public class TeaCup : MonoBehaviour
             if (objectToEnable != null)
             {
                 objectToEnable.SetActive(true);
+                objectToDisable.SetActive(false);
                 Debug.Log("Lump detected in the trigger zone. Object enabled!");
             }
             else
