@@ -12,6 +12,8 @@ TagManager:
   - Metal
   - Scoop
   - Lump
+  - Whisk
+  - Correct
   layers:
   - Default
   - TransparentFX
