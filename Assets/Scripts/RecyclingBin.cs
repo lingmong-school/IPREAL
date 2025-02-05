@@ -9,7 +9,8 @@ public class RecyclingBin : MonoBehaviour
     {
         Paper,
         Plastic,
-        Metal
+        Metal,
+        Glass
     }
 
     [SerializeField] private RubbishType acceptedType; // The type of rubbish the bin accepts

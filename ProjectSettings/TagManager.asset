@@ -14,6 +14,8 @@ TagManager:
   - Lump
   - Whisk
   - Correct
+  - WaterScoop
+  - Food
   layers:
   - Default
   - TransparentFX
@@ -21,10 +23,10 @@ TagManager:
   - Poke
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
+  - Cup
+  - Scoop
+  - PourZone
+  - Food
   - 
   - 
   - 
