@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.31285363, g: 0.55013007, b: 0.8221572, a: 1}
+  m_IndirectSpecularColor: {r: 0.3130029, g: 0.5501603, b: 0.8220557, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -34651,6 +34651,83 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1001 &1681011816
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 45314324f79ac9c478b162f113958777, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 17.695
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 45314324f79ac9c478b162f113958777, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 17.695
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 45314324f79ac9c478b162f113958777, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 17.695
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 45314324f79ac9c478b162f113958777, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.2331095
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 45314324f79ac9c478b162f113958777, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.9580998
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 45314324f79ac9c478b162f113958777, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.4113508
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 45314324f79ac9c478b162f113958777, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 45314324f79ac9c478b162f113958777, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 45314324f79ac9c478b162f113958777, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 45314324f79ac9c478b162f113958777, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 45314324f79ac9c478b162f113958777, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 45314324f79ac9c478b162f113958777, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 45314324f79ac9c478b162f113958777, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 45314324f79ac9c478b162f113958777, type: 3}
+      propertyPath: m_Name
+      value: waterbottle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3575641881151511511, guid: 45314324f79ac9c478b162f113958777, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4df4e2cfba30a2c4fa33a6e9d38c2bda, type: 2}
+    - target: {fileID: 3575641881151511511, guid: 45314324f79ac9c478b162f113958777, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 03bf42c9c4da48f41adac2a2b8b096e5, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 45314324f79ac9c478b162f113958777, type: 3}
 --- !u!1 &1683995448
 GameObject:
   m_ObjectHideFlags: 0
@@ -36277,7 +36354,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 9.1834e-41, y: 0, z: 0, w: 1e-45}
+  m_BoundingSphereOverride: {x: 1.02e-43, y: 1.1e-44, z: 2.448e-41, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -49481,3 +49558,4 @@ SceneRoots:
   - {fileID: 1146076726}
   - {fileID: 1750967206}
   - {fileID: 1169285602}
+  - {fileID: 1681011816}
