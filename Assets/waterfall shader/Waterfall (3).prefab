@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &7415709529003149795
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 33f3dfeb329f1d1409c333ce51aaf875,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 15.643719
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 33f3dfeb329f1d1409c333ce51aaf875,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 9.5512495
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 33f3dfeb329f1d1409c333ce51aaf875,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 9.5512495
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 33f3dfeb329f1d1409c333ce51aaf875,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1753.8
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 33f3dfeb329f1d1409c333ce51aaf875,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 134.3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 33f3dfeb329f1d1409c333ce51aaf875,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 343.4
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 33f3dfeb329f1d1409c333ce51aaf875,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.73835915
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 33f3dfeb329f1d1409c333ce51aaf875,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.172781
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 33f3dfeb329f1d1409c333ce51aaf875,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.63517696
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 33f3dfeb329f1d1409c333ce51aaf875,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.14670633
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 33f3dfeb329f1d1409c333ce51aaf875,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -26.201
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 33f3dfeb329f1d1409c333ce51aaf875,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -81.45
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 33f3dfeb329f1d1409c333ce51aaf875,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0.182
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 33f3dfeb329f1d1409c333ce51aaf875,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ade1528c8931bd241b304659f49489b3, type: 2}
+    - target: {fileID: 919132149155446097, guid: 33f3dfeb329f1d1409c333ce51aaf875,
+        type: 3}
+      propertyPath: m_Name
+      value: Waterfall (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 33f3dfeb329f1d1409c333ce51aaf875, type: 3}
