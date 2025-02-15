@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-
 public class WaterFill : MonoBehaviour
 {
     [Header("Water Level Settings")]
@@ -19,6 +18,11 @@ public class WaterFill : MonoBehaviour
     [Header("Matcha Activation")]
     public GameObject matchaActivator; // The required object that must be enabled for color change
 
+    [Header("Audio & UI Settings")]
+    public AudioSource audioSource; // Reference to the AudioSource
+    public AudioClip colorChangeSound; // Sound to play when color change completes
+    public GameObject objectToEnable; // GameObject to enable when color change is completed
+
     private Vector3 initialScale; // Store the initial scale
     private Coroutine colorChangeCoroutine; // Coroutine reference
     private bool isColorChanged = false; // Track if the water has turned green
@@ -35,6 +39,11 @@ public class WaterFill : MonoBehaviour
         if (waterMaterial != null)
         {
             waterMaterial.color = defaultColor; // Set the default color
+        }
+
+        if (objectToEnable != null)
+        {
+            objectToEnable.SetActive(false); // Ensure the target object is disabled initially
         }
     }
 
@@ -93,6 +102,59 @@ public class WaterFill : MonoBehaviour
             yield return null;
         }
 
-        waterMaterial.color = targetColor; // Ensure the final color is set
+        // Ensure the final color is set
+        waterMaterial.color = targetColor;
+
+        // Trigger completion actions
+        OnColorChangeComplete();
+    }
+
+    /// <summary>
+    /// Plays the completion sound, enables the target GameObject, and updates the GameManager when the water turns green.
+    /// </summary>
+    private void OnColorChangeComplete()
+    {
+        // Play sound
+        if (audioSource != null && colorChangeSound != null)
+        {
+            audioSource.Stop();
+            audioSource.PlayOneShot(colorChangeSound);
+            Debug.Log("Color change sound played.");
+        }
+        else
+        {
+            Debug.LogWarning("AudioSource or colorChangeSound is not assigned!");
+        }
+
+        // Enable the object
+        if (objectToEnable != null)
+        {
+            objectToEnable.SetActive(true);
+            Debug.Log("Object enabled: " + objectToEnable.name);
+        }
+        else
+        {
+            Debug.LogWarning("No object assigned to enable.");
+        }
+
+        // Update the GameManager
+        UpdateGameManager();
+    }
+
+    /// <summary>
+    /// Updates the GameManager by setting TeaDone to true and pushing progress to Firebase.
+    /// </summary>
+    private void UpdateGameManager()
+    {
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.CompleteActivity("Tea"); // Mark Tea as complete
+            GameManager.Instance.PushProgressToFirebase(); // Sync progress with Firebase
+            Debug.Log("GameManager updated: TeaDone set to TRUE and progress pushed.");
+        }
+        else
+        {
+            Debug.LogWarning("GameManager instance not found!");
+        }
     }
 }

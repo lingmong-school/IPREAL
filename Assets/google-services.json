@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "104010835494",
+    "firebase_url": "https://ip-project-64760-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "ip-project-64760",
+    "storage_bucket": "ip-project-64760.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:104010835494:android:f9e569e8bfd6d66cb5e8e7",
+        "android_client_info": {
+          "package_name": "chopped.chin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuWE1YdpWEjAtIX9t5qg69cc5cvGzZT-U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

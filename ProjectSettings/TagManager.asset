@@ -16,6 +16,7 @@ TagManager:
   - Correct
   - WaterScoop
   - Food
+  - Glass
   layers:
   - Default
   - TransparentFX
@@ -29,7 +30,7 @@ TagManager:
   - Food
   - Player
   - bridge
-  - 
+  - water
   - 
   - 
   - 

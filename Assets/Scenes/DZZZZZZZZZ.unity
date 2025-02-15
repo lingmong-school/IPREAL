@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.31285363, g: 0.55013007, b: 0.8221572, a: 1}
+  m_IndirectSpecularColor: {r: 0.31350318, g: 0.5525036, b: 0.82333165, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3321,6 +3321,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   acceptedType: 3
+  tourGuideAnimator: {fileID: 0}
+  correctAudioSource: {fileID: 0}
+  wrongAudioSource: {fileID: 0}
+  objectToEnable: {fileID: 0}
 --- !u!65 &135196178
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11824,6 +11828,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToEnable: {fileID: 2017807638}
   objectToDisable: {fileID: 2043277412}
+  audioSource: {fileID: 0}
+  activationSound: {fileID: 0}
 --- !u!54 &192997589
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -25818,6 +25824,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7057146721665721381, guid: 9c9926ba62b8cae439584bcffa976a76, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ada172585f2e0054bbab74272c000602, type: 2}
     - target: {fileID: 9081435781286381267, guid: 9c9926ba62b8cae439584bcffa976a76, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -29114,6 +29124,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   requiredTag: mochi
   targetAnimator: {fileID: 750489264}
+  audioSource: {fileID: 0}
+  pokeSound: {fileID: 0}
+  objectToEnable: {fileID: 0}
 --- !u!4 &1301920622 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2480442903471159473, guid: 9c9926ba62b8cae439584bcffa976a76, type: 3}
@@ -29158,7 +29171,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6964694297025596662, guid: 55e53cdf3109a1c4887048acfe51085e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.656
+      value: 5.137
       objectReference: {fileID: 0}
     - target: {fileID: 6964694297025596662, guid: 55e53cdf3109a1c4887048acfe51085e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -29955,6 +29968,9 @@ MonoBehaviour:
   matchaColor: {r: 0, g: 0.5849056, b: 0, a: 0.90588236}
   colorChangeDuration: 3
   matchaActivator: {fileID: 2017807638}
+  audioSource: {fileID: 0}
+  colorChangeSound: {fileID: 0}
+  objectToEnable: {fileID: 0}
 --- !u!54 &1409417501
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -29996,6 +30012,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToEnable: {fileID: 2017807638}
   objectToDisable: {fileID: 2043277412}
+  audioSource: {fileID: 0}
+  activationSound: {fileID: 0}
 --- !u!1 &1414836444 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4555032908628989230, guid: 9c9926ba62b8cae439584bcffa976a76, type: 3}
@@ -33958,6 +33976,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   requiredTag: mochi
   targetAnimator: {fileID: 0}
+  audioSource: {fileID: 0}
+  pokeSound: {fileID: 0}
+  objectToEnable: {fileID: 0}
 --- !u!1001 &1613861342
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34058,6 +34079,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   acceptedType: 1
+  tourGuideAnimator: {fileID: 0}
+  correctAudioSource: {fileID: 0}
+  wrongAudioSource: {fileID: 0}
+  objectToEnable: {fileID: 0}
 --- !u!65 &1613861345
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34260,6 +34285,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   acceptedType: 0
+  tourGuideAnimator: {fileID: 0}
+  correctAudioSource: {fileID: 0}
+  wrongAudioSource: {fileID: 0}
+  objectToEnable: {fileID: 0}
 --- !u!65 &1625910216
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35057,6 +35086,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   acceptedType: 2
+  tourGuideAnimator: {fileID: 0}
+  correctAudioSource: {fileID: 0}
+  wrongAudioSource: {fileID: 0}
+  objectToEnable: {fileID: 0}
 --- !u!65 &1693887863
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36502,7 +36535,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 2.8180974e+20, z: 1.6927021e+22, w: 1.37753e-40}
+  m_BoundingSphereOverride: {x: 2.2e-44, y: 2.4405384e-30, z: 9.1858e-41, w: 4.591775e-39}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -45322,7 +45355,7 @@ Transform:
   m_GameObject: {fileID: 1487904863248788065}
   serializedVersion: 2
   m_LocalRotation: {x: 0.491968, y: 0.49196783, z: 0.5079052, w: 0.50790507}
-  m_LocalPosition: {x: -5.172, y: 3.971, z: 0.473}
+  m_LocalPosition: {x: -5.172, y: 6.4519997, z: 0.473}
   m_LocalScale: {x: 25.280424, y: 25.280416, z: 25.280424}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -49263,6 +49296,8 @@ MonoBehaviour:
   maxHits: 10
   pickupMochi: {fileID: 1865661795}
   interactableMochi: {fileID: 4578284386474422238}
+  audioSource: {fileID: 0}
+  completionSound: {fileID: 0}
 --- !u!4 &8000298674136302363
 Transform:
   m_ObjectHideFlags: 0
@@ -49414,7 +49449,7 @@ Transform:
   m_GameObject: {fileID: 4578284386474422238}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.8788688, y: 3.6249998, z: 2.076}
+  m_LocalPosition: {x: -3.8788688, y: 6.106, z: 2.076}
   m_LocalScale: {x: 0.2627993, y: 0.2627993, z: 0.2627993}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -49551,7 +49586,7 @@ Transform:
   m_GameObject: {fileID: 3444946194531283423}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.874717, y: 3.324, z: 2.072528}
+  m_LocalPosition: {x: -3.874717, y: 5.805, z: 2.072528}
   m_LocalScale: {x: 18.20671, y: 18.20671, z: 18.20671}
   m_ConstrainProportionsScale: 0
   m_Children:

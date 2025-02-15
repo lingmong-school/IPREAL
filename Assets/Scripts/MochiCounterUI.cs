@@ -2,15 +2,19 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-
+/// <summary>
+/// Handles the Mochi pounding progress bar and triggers events when it's full.
+/// </summary>
 public class MochiCounterUI : MonoBehaviour
 {
-    [SerializeField] private Image progressBar;        // Reference to the UI Image for the fill bar
-    [SerializeField] private int maxHits = 10;         // Maximum number of hits to fill the bar
-    [SerializeField] private GameObject pickupMochi;   // The mochi to enable when progress is full
+    [SerializeField] private Image progressBar;         // Reference to the UI Image for the fill bar
+    [SerializeField] private int maxHits = 10;          // Maximum number of hits to fill the bar
+    [SerializeField] private GameObject pickupMochi;    // The mochi to enable when progress is full
     [SerializeField] private GameObject interactableMochi; // The interactable mochi to disable when progress is full
+    [SerializeField] private AudioSource audioSource;   // Reference to the AudioSource
+    [SerializeField] private AudioClip completionSound; // Sound to play when progress is full
 
-    private int hitCounter = 0;                        // Counter to track the number of hits
+    private int hitCounter = 0;                         // Counter to track the number of hits
 
     private void OnTriggerEnter(Collider other)
     {
@@ -60,6 +64,14 @@ public class MochiCounterUI : MonoBehaviour
         {
             interactableMochi.SetActive(false);
             Debug.Log("Interactable mochi has been disabled.");
+        }
+
+        // Play the completion sound
+        if (audioSource != null && completionSound != null)
+        {
+            audioSource.Stop();  // Stop any currently playing sounds
+            audioSource.PlayOneShot(completionSound);
+            Debug.Log("Completion sound played.");
         }
     }
 }
