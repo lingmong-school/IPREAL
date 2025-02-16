@@ -146,7 +146,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wanderRadius: 5
   wanderTimer: 5
-  detectionRadius: 3
+  detectionRadius: 10
 --- !u!1001 &6898566508652550760
 PrefabInstance:
   m_ObjectHideFlags: 0
